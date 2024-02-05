@@ -1,1 +1,1 @@
-# blog-builder
+# Blog Builder repo
