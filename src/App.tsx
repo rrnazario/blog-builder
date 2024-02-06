@@ -1,4 +1,4 @@
-import Logo from "./components/Logo";
+import Logo from "./components/SpinLogo";
 import RoundedButton from "./components/RoundedButton";
 import SocialMedias from "./components/SocialMedias";
 import GlobalStyle from "./global";

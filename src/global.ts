@@ -11,9 +11,20 @@ const GlobalStyle = createGlobalStyle`
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
-#root{
-    margin:0 auto;
-}
+
+:root {
+    --background: white;
+    --text-primary: black;
+    --text-secondary: #f78da7;
+    --text-tertiary: #4f6ee4;
+    --accent: purple;
+  }
+  [data-theme='dark'] {
+    --background: black;
+    --text-primary: white;
+    --text-secondary: grey;
+    --accent: darkred;
+  }
 `
 
 export default GlobalStyle;
