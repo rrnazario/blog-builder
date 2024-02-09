@@ -12,6 +12,9 @@ function App() {
       pictureUrl="http://i.stack.imgur.com/Dj7eP.jpg"
       title="Blog dos titulos lorem"
       summary="A partir de £ 25 por pessoa. Temas e datas pré-definidos. Pubs históricos ou locais históricos do rock. Tem uma Londres pra tudo que é gosto!"
+      style={{
+        maxWidth: '600px'
+      }}
     />
     <SocialMedias instagram youtube facebook tiktok twitter />
   </>

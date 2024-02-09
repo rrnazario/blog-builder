@@ -19,10 +19,10 @@ interface SocialMediasProps {
 
 export default function SocialMedias(props: SocialMediasProps) {
     return <Styled.Container>
-        {props.instagram && <Icon icon={faInstagram} size={props.size} link={props.instagramUrl} />}
-        {props.youtube && <Icon icon={faYoutube} size={props.size} link={props.youtubeUrl} />}
-        {props.tiktok && <Icon icon={faTiktok} size={props.size} link={props.tiktokUrl}/>}
-        {props.facebook && <Icon icon={faFacebook} size={props.size} link={props.facebookUrl}/>}
-        {props.twitter && <Icon icon={faTwitter} size={props.size} link={props.twitterUrl}/>}
+        {props.instagram && <Icon icon={faInstagram} size={props.size} link={props.instagramUrl} title='Instagram' />}
+        {props.youtube && <Icon icon={faYoutube} size={props.size} link={props.youtubeUrl} title='Youtube' />}
+        {props.tiktok && <Icon icon={faTiktok} size={props.size} link={props.tiktokUrl} title='TikTok'/> }
+        {props.facebook && <Icon icon={faFacebook} size={props.size} link={props.facebookUrl} title='Facebook'/>}
+        {props.twitter && <Icon icon={faTwitter} size={props.size} link={props.twitterUrl} title='Twitter'/>}
     </Styled.Container>
 }
