@@ -1,35 +1,45 @@
 import styled from "styled-components";
 
-interface ContainerProps {
-    backgroundUrl?: string
-}
-
-export const Container = styled.div<ContainerProps>`
-    cursor: pointer;
-    padding: 100px 40px;
-    color: black;
+export const Container = styled.div`
+    padding: 40px;
+    overflow: hidden;
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 700px;
+    position: relative;
+    background-color: #000;
+    color: white;
 
-    transition: all .2s ease-in-out;
-    background-image: url('${props => props.backgroundUrl}');
-    background-size: cover;
-    background-position: top center;
+    transition: all .5s ease-in-out;
 
-    &:hover {
-        
+    img:hover {
+        transform: scale(1.1);
     } 
 
     h2 {
         padding: 30px;
-    }
+    }   
 `
 
-export const SummaryContainer = styled.div`
+export const TitleContainer = styled.div`
     display: flex;
+    position: relative;
     align-items: center;
+    z-index: 2;
+    color: white;
+`
+
+export const MiddleContainer = styled(TitleContainer)`    
     padding: 20px;
+`
+
+export const BackgroundImage = styled.img`
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: .5;
+    z-index: 0;
+
+    transition: all .2s ease-in-out; 
 `

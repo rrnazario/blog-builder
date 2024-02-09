@@ -10,15 +10,19 @@ interface CardProps {
 }
 
 export default function Card(props: CardProps) {
-    return <Styled.Container backgroundUrl={props.pictureUrl} onClick={props.onClick}  >
-        <h2>{props.title}</h2>
+    return <Styled.Container onClick={props.onClick}  >
+        <Styled.TitleContainer>
+            <h2>{props.title}</h2>
+        </Styled.TitleContainer>
 
-        <Styled.SummaryContainer>
+        <Styled.BackgroundImage src={props.pictureUrl} />
+
+        <Styled.MiddleContainer>
             <p>{props.summary}</p>
             <RoundedButton caption={props.buttonCaption ?? 'Saiba mais'} style={{
                 textAlign: 'center'
-            }}/>
-        </Styled.SummaryContainer>
+            }} />
+        </Styled.MiddleContainer>
 
     </Styled.Container>
 }
