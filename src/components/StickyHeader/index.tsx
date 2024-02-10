@@ -3,7 +3,7 @@ import * as Styled from './styles'
 import Logo from '../SpinLogo';
 
 interface StickyHeaderProps {
-    children: ReactElement<any, any>[];
+    children?: ReactElement<any, any>[];
 }
 function StickyHeader({ children }: StickyHeaderProps) {
     window.onscroll = () => {
