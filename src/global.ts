@@ -25,6 +25,12 @@ const GlobalStyle = createGlobalStyle`
     --text-secondary: grey;
     --accent: darkred;
   }
+
+  a, a:hover, a:focus, a:active {
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+} 
 `
 
 export default GlobalStyle;

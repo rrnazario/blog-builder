@@ -6,12 +6,7 @@ export const Container = styled.div`
     color: var(--text-primary);
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    a, a:hover, a:focus, a:active {
-        text-decoration: none;
-        color: inherit;
-    }    
+    justify-content: center;       
 `
 
 export const Icon = styled(FontAwesomeIcon)`
