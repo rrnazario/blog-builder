@@ -13,25 +13,16 @@ function App() {
       buttonCaption="Saiba mais"
       pictureUrl="http://i.stack.imgur.com/Dj7eP.jpg"
       title="Blog dos titulos lorem"
-      summary="A partir de £ 25 por pessoa. Temas e datas pré-definidos. Pubs históricos ou locais históricos do rock. Tem uma Londres pra tudo que é gosto!"
+      summary="labore 
+      suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
+      modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
+      totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
+      quasi aliquam eligendi, placeat qui corporis!"
       style={{
         maxWidth: '600px'
       }}
     />
-    <SocialMedias instagram youtube facebook tiktok twitter />
-    <SocialMedias instagram youtube facebook tiktok twitter />
-    <SocialMedias instagram youtube facebook tiktok twitter />
-    <SocialMedias instagram youtube facebook tiktok twitter />
-    <SocialMedias instagram youtube facebook tiktok twitter />
-    <SocialMedias instagram youtube facebook tiktok twitter />
-    <SocialMedias instagram youtube facebook tiktok twitter />
-    <SocialMedias instagram youtube facebook tiktok twitter />
-    <SocialMedias instagram youtube facebook tiktok twitter />
-    <SocialMedias instagram youtube facebook tiktok twitter />
-    <SocialMedias instagram youtube facebook tiktok twitter />
-    <SocialMedias instagram youtube facebook tiktok twitter />
-    <SocialMedias instagram youtube facebook tiktok twitter />
-    <SocialMedias instagram youtube facebook tiktok twitter />
+    <SocialMedias instagram youtube tiktok size='3x' />
     <StaticFooter />
   </>
 }

@@ -10,10 +10,16 @@ export const Container = styled.div`
     display:flex;
     align-items: center;
     justify-content: space-between;
+
+    a:hover {
+    color: var(--text-secondary);
+  }
 `
 
 export const DevFooter = styled.div`    
     display:flex;
     align-items: flex-end;
     flex-direction: column;
+    font-weight: 700;
+
 `

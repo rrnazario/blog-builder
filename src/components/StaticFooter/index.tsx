@@ -10,7 +10,7 @@ function StaticFooter({ spinLogo }: StaticFooterProps) {
         <Logo spin={spinLogo} />
         <Styled.DevFooter>
             <p>2024</p>
-            <p>Desenvolvido por ZarioSoft</p>            
+            <p>Desenvolvido por <a href='http://t.me/rrnazario' target='_blank' rel="noreferrer">ZarioSoft</a></p>
         </Styled.DevFooter>
     </Styled.Container>
 }
