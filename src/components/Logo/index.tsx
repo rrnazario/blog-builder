@@ -6,7 +6,7 @@ interface LogoProps {
 }
 
 function Logo({ spin }: LogoProps) {
-  return <Styled.Container spin={spin}>
+  return <Styled.Container $spin={spin}>
       <img src='/logo.png' alt="Logo" />
     </Styled.Container>;
 }

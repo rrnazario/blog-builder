@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface ContainerProps {
-  spin?: boolean
+  $spin?: boolean
 }
 export const Container = styled.div<ContainerProps>`
     cursor:pointer;
@@ -10,6 +10,6 @@ export const Container = styled.div<ContainerProps>`
         width: 80px;
       }
       img:hover {
-        ${props => props.spin && 'transform: rotate(360deg);'}
+        ${props => props.$spin && 'transform: rotate(360deg);'}
       }
 `
