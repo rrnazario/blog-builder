@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+interface ContainerProps {
+  spin?: boolean
+}
+export const Container = styled.div<ContainerProps>`
     cursor:pointer;
     img {
         transition: transform .7s ease-in-out;
         width: 80px;
       }
       img:hover {
-        transform: rotate(360deg);
+        ${props => props.spin && 'transform: rotate(360deg);'}
       }
 `

@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import * as Styled from './styles'
-import Logo from '../SpinLogo';
+import Logo from '../Logo';
 
 interface StickyHeaderProps {
     children?: ReactElement<any, any>[];
@@ -18,7 +18,7 @@ function StickyHeader({ children }: StickyHeaderProps) {
 
     return <>
         <Styled.Container>
-            <Logo />
+            <Logo spin />
             <div className="header" id="myHeader">
                 <nav>
                     <a href="/html/">Sobre</a> |&nbsp; 

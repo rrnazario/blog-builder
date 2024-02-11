@@ -2,6 +2,7 @@ import SocialMedias from "./components/SocialMedias";
 import GlobalStyle from "./global";
 import Card from "./components/Card";
 import StickyHeader from "./components/StickyHeader";
+import StaticFooter from "./components/StaticFooter";
 
 function App() {
   return <>
@@ -31,7 +32,7 @@ function App() {
     <SocialMedias instagram youtube facebook tiktok twitter />
     <SocialMedias instagram youtube facebook tiktok twitter />
     <SocialMedias instagram youtube facebook tiktok twitter />
-
+    <StaticFooter />
   </>
 }
 

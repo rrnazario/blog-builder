@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
 export const Container = styled.div`
-    margin-top: 10px;
+    margin: 10px;
     color: var(--text-primary);
     display: flex;
     align-items: center;

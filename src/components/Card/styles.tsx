@@ -16,7 +16,7 @@ export const Container = styled.div`
 
     h2 {
         padding: 30px;
-    }   
+    }    
 `
 
 export const TitleContainer = styled.div`
@@ -25,6 +25,10 @@ export const TitleContainer = styled.div`
     align-items: center;
     z-index: 2;
     color: white;
+
+    img:hover {
+        transform: scale(1.1);
+    }
 `
 
 export const MiddleContainer = styled(TitleContainer)`    
