@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.header`
     background-color: #f1f1f1;
     transition: all 0.2s ease-in-out;
  

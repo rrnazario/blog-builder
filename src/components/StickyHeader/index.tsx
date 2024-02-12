@@ -1,11 +1,7 @@
-import { ReactElement } from 'react';
 import * as Styled from './styles'
 import Logo from '../Logo';
 
-interface StickyHeaderProps {
-    children?: ReactElement<any, any>[];
-}
-function StickyHeader({ children }: StickyHeaderProps) {
+function StickyHeader() {
     window.onscroll = () => {
         const header = document.getElementById("myHeader");
         const sticky = header?.offsetTop ?? -1;
@@ -27,7 +23,6 @@ function StickyHeader({ children }: StickyHeaderProps) {
                 </nav>
             </div>
         </Styled.Container>
-        {children}
     </>
 }
 
