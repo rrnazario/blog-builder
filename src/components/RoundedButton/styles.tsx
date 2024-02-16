@@ -8,8 +8,6 @@ export const Container = styled.div`
     font-weight: 700;
     border-radius: 40px;
     white-space: nowrap;
-    align-items: center;
-    justify-content: center;
     transition: background 0.2s ease-in-out;
 
     &:hover {

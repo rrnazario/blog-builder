@@ -5,7 +5,7 @@ export const Container = styled.div`
     flex-direction: column;
     background-color: #1a1919;
     transition: all 0.2s ease-in-out;
-    height: 300px;
+    height: 400px;
     padding: 10px 16px;
     color: #f1f1f1;
     align-items: center;
@@ -23,7 +23,7 @@ export const Container = styled.div`
 
 export const Detail = styled.div`    
     display:flex;
-
+    width: 600px;
 `
 
 export const DevFooter = styled.div`    
