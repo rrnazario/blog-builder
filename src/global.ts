@@ -30,7 +30,18 @@ const GlobalStyle = createGlobalStyle`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     color: inherit;
-} 
+  } 
+
+  hr {
+    height: 5PX;
+    color: black;
+    fill: black;
+    width: 200px;
+    border-color: black;
+    background: black;
+    border-radius: 5px;
+    margin: 10px;
+  }
 `
 
 export default GlobalStyle;

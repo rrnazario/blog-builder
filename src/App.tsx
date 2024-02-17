@@ -9,36 +9,63 @@ function App() {
   return <>
     <GlobalStyle />
     <StickyHeader />
-
-    <PresentationCard
-      buttonCaption="Saiba mais"
-      pictureUrl="http://i.stack.imgur.com/Dj7eP.jpg"
-      title="Sejam bem-vindos"
-      subtitle="Nosso subtitulo"
-      summary="labore 
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center'
+    }}>
+      <PresentationCard
+        buttonCaption="Saiba mais"
+        pictureUrl="http://i.stack.imgur.com/Dj7eP.jpg"
+        title="Sejam bem-vindos"
+        subtitle="Nosso subtitulo"
+        summary="labore 
       suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
       modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
       totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
       quasi aliquam eligendi, placeat qui corporis!"
-      style={{
-        maxWidth: '1200px'
-      }}
-    />
+        style={{
+          maxWidth: '1200px'
+        }}
+      />
 
-    <Card
-      buttonCaption="Saiba mais"
-      pictureUrl="http://i.stack.imgur.com/Dj7eP.jpg"
-      title="Blog dos titulos lorem"
-      summary="labore 
+      <div style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}>
+        <Card
+          buttonCaption="Saiba mais"
+          pictureUrl="http://i.stack.imgur.com/Dj7eP.jpg"
+          title="Blog dos titulos lorem"
+          summary="labore 
       suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
       modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
       totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
       quasi aliquam eligendi, placeat qui corporis!"
-      style={{
-        maxWidth: '600px'
-      }}
-    />
-    <SocialMedias instagram youtube tiktok size='3x' />
+          style={{
+            maxWidth: '600px'
+          }}
+        />
+
+        <Card
+          buttonCaption="Saiba mais"
+          pictureUrl="http://i.stack.imgur.com/Dj7eP.jpg"
+          title="Blog dos titulos lorem"
+          summary="labore 
+      suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
+      modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
+      totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
+      quasi aliquam eligendi, placeat qui corporis!"
+          style={{
+            maxWidth: '600px'
+          }}
+        />
+      </div>
+      <SocialMedias instagram youtube tiktok size='3x' />
+      <hr />
+    </div>
     <StaticFooter />
   </>
 }
