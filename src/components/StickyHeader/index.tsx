@@ -1,5 +1,4 @@
 import * as Styled from './styles'
-import Logo from '../Logo';
 
 function StickyHeader() {
     window.onscroll = () => {
@@ -14,7 +13,7 @@ function StickyHeader() {
 
     return <>
         <Styled.Container>
-            <Logo spin />
+            <img src='/logo_panel.png' alt="Diário de Rolê - Blog" />
             <div className="header" id="myHeader">
                 <nav>
                     <a href="/html/">Sobre</a> |&nbsp; 

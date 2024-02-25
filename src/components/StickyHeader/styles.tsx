@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-    background-color: #f1f1f1;
-    transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: all 0.2s ease-in-out;
  
   .header {
     padding: 10px 16px;
     background-color: #1a1919;
     color: #f1f1f1;
+    width: 100%;
   }
   
   .content {
@@ -26,10 +30,15 @@ export const Container = styled.header`
   }
 
   nav {
-    text-align: right;
+    text-align: center;
   }
 
   a:hover {
     color: var(--text-secondary);
+  }
+
+  img {
+    width: 100%;
+    height: 500px;
   }
 `

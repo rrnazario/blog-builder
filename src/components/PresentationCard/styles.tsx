@@ -7,7 +7,7 @@ export const Container = styled.div`
     border-radius: 20px;
     display: flex;
     flex-direction: row;
-    background-color: #cbe5f5;
+    background-color: rgb(232,233,233);
     color: black;
 
     transition: all .5s ease-in-out;

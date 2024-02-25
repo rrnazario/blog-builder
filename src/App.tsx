@@ -16,9 +16,8 @@ function App() {
     }}>
       <PresentationCard
         buttonCaption="Saiba mais"
-        pictureUrl="http://i.stack.imgur.com/Dj7eP.jpg"
-        title="Sejam bem-vindos"
-        subtitle="Nosso subtitulo"
+        pictureUrl="/pres3.png"
+        title="Salve galera!"
         summary="labore 
       suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
       modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
@@ -28,7 +27,11 @@ function App() {
           maxWidth: '1200px'
         }}
       />
-
+      <h2>Sigam nossas redes sociais</h2>
+      <SocialMedias instagram youtube tiktok size='3x' />
+      <hr />
+      <br />
+      <h2>Nossas promoções</h2>
       <div style={{
         display: 'flex',
         flexWrap: 'wrap',
@@ -62,9 +65,21 @@ function App() {
             maxWidth: '600px'
           }}
         />
+
+        <Card
+          buttonCaption="Saiba mais"
+          pictureUrl="http://i.stack.imgur.com/Dj7eP.jpg"
+          title="Blog dos titulos lorem"
+          summary="labore 
+      suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
+      modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
+      totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
+      quasi aliquam eligendi, placeat qui corporis!"
+          style={{
+            maxWidth: '600px'
+          }}
+        />
       </div>
-      <SocialMedias instagram youtube tiktok size='3x' />
-      <hr />
     </div>
     <StaticFooter />
   </>

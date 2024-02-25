@@ -20,8 +20,10 @@ export default function PresentationCard(props: PresentationCardProps) {
         <Styled.RightPanel>
             <h2>{props.title}</h2>
             <br />
-            <h4>{props.subtitle}</h4>
-            <br />
+            {props.subtitle && <>                
+                <h4>{props.subtitle}</h4>
+                <br />
+            </>}
             <p>{props.summary}</p>
             <br />
             <p>{props.summary}</p>
