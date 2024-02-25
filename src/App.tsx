@@ -27,12 +27,13 @@ function App() {
           maxWidth: '1200px'
         }}
       />
+      <br />
       <h2>Sigam nossas redes sociais</h2>
-      <SocialMedias 
-      instagramUrl="https://www.instagram.com/diario.derole"
-      youtubeUrl="https://www.youtube.com/@diarioderole"
-      tiktokUrl="https://www.tiktok.com/diario.derole"
-      size='3x' />
+      <SocialMedias
+        instagramUrl="https://www.instagram.com/diario.derole"
+        youtubeUrl="https://www.youtube.com/@diarioderole"
+        tiktokUrl="https://www.tiktok.com/@diario.derole"
+        size='3x' />
       <hr />
       <br />
       <h2>Nossas Parcerias</h2>
@@ -83,7 +84,7 @@ function App() {
             maxWidth: '600px'
           }}
         />
-        
+
       </div>
       <hr />
       <br />

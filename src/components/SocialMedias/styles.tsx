@@ -2,11 +2,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
 export const Container = styled.div`
-    margin: 10px;
+    margin-bottom: 10px;
     color: var(--text-primary);
     display: flex;
     align-items: center;
-    justify-content: center;       
+    justify-content: space-around;
+    width: 170px; 
 `
 
 export const Icon = styled(FontAwesomeIcon)`
@@ -17,5 +18,4 @@ export const Icon = styled(FontAwesomeIcon)`
         color: var(--text-secondary);
     }
 
-    padding-right: 15px;
 `

@@ -28,12 +28,20 @@ export const LeftPanel = styled.div`
     justify-content: center;
     align-items: center;
     margin-right: 30px;
+
+    @media (max-width: 1000px) {
+        margin-right: 0px;
+    }
 `
 
 export const RightPanel = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    @media (max-width: 1000px) {
+        align-items: center;
+    }
 `
 
 export const Picture = styled.img`

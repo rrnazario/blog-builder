@@ -18,7 +18,7 @@ function StickyHeader() {
                 <nav>
                     <a href="/html/">Sobre</a> |&nbsp; 
                     <a href="/css/">Contato</a> |&nbsp;
-                    <a href="/js/">Blog</a>
+                    <a href="/js/">Parcerias</a>
                 </nav>
             </div>
         </Styled.Container>
