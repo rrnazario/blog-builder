@@ -11,7 +11,7 @@ export default function Icon(props: IconProps) {
     const p = { ...props }
     p.size ??= '2x' as SizeProp;
 
-    return <a href={props.link} title={p.title}>
+    return <a href={props.link} title={p.title} target='_blank' rel="noreferrer">
         <Styled.Icon {...p} />
     </a>
 }

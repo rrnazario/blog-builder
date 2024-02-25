@@ -28,10 +28,14 @@ function App() {
         }}
       />
       <h2>Sigam nossas redes sociais</h2>
-      <SocialMedias instagram youtube tiktok size='3x' />
+      <SocialMedias 
+      instagramUrl="https://www.instagram.com/diario.derole"
+      youtubeUrl="https://www.youtube.com/@diarioderole"
+      tiktokUrl="https://www.tiktok.com/diario.derole"
+      size='3x' />
       <hr />
       <br />
-      <h2>Nossas promoções</h2>
+      <h2>Nossas Parcerias</h2>
       <div style={{
         display: 'flex',
         flexWrap: 'wrap',
@@ -79,7 +83,10 @@ function App() {
             maxWidth: '600px'
           }}
         />
+        
       </div>
+      <hr />
+      <br />
     </div>
     <StaticFooter />
   </>

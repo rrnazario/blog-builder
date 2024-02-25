@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     cursor: pointer;
-    padding: 15px 40px;
+    padding: 0px 40px;
     background: var(--text-tertiary);
     color: var(--background);
     font-weight: 700;

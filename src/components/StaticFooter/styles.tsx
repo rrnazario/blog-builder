@@ -5,7 +5,7 @@ export const Container = styled.div`
     flex-direction: column;
     background-color: #1a1919;
     transition: all 0.2s ease-in-out;
-    height: 400px;
+    height: 600px;
     padding: 10px 16px;
     color: #f1f1f1;
     align-items: center;
@@ -19,11 +19,14 @@ export const Container = styled.div`
         color: gray;
         font-size: 30px;
     }
+    @media (max-width: 1000px) {
+        max-height: 600px;
+    }
 `
 
 export const Detail = styled.div`    
     display:flex;
-    width: 600px;
+    max-width: 600px;
 `
 
 export const DevFooter = styled.div`    

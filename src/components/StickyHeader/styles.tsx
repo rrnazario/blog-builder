@@ -41,4 +41,11 @@ export const Container = styled.header`
     width: 100%;
     height: 500px;
   }
+
+  @media (max-width: 1000px) {
+    img {
+      width: 100%;
+      height: 300px;
+    }
+}
 `

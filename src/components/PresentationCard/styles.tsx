@@ -15,6 +15,11 @@ export const Container = styled.div`
     img:hover {
         transform: scale(1.1);
     } 
+
+    @media (max-width: 1000px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 `
 
 export const LeftPanel = styled.div`
