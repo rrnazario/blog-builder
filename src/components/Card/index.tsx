@@ -20,7 +20,11 @@ export default function Card(props: CardProps) {
         <Styled.BackgroundImage src={props.pictureUrl} />
 
         <Styled.MiddleContainer>
-            <div>
+            <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '1px'
+            }}>
                 {props.summary && props.summary.map((value, index) => <p key={index}>{value}</p>)}
             </div>
             <RoundedButton caption={props.buttonCaption ?? 'Saiba mais'} style={{

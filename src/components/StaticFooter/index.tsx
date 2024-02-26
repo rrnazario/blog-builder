@@ -10,6 +10,7 @@ function StaticFooter({ spinLogo }: StaticFooterProps) {
         <Logo spin={spinLogo} />
         <Styled.Detail>
             <p>Diário de Rolê - 2024</p>
+            <p>Todos os direitos reservados</p>
         </Styled.Detail>
         <h3>...</h3>
 

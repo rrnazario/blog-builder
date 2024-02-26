@@ -17,6 +17,7 @@ function App() {
       alignItems: 'center'
     }}>
       <PresentationCard
+        key={99}
         buttonCaption="Fale conosco"
         pictureUrl="/pres3.png"
         title="Salve galera!"
@@ -53,10 +54,8 @@ function App() {
           pictureUrl="/espanol.png"
           title="Aprenda Espanhol desde já!"
           summary={["Faça aulas de castellano falado na Espanha com a professora Gabriela Proença.",
-            "Lições focadas nas suas necessidades. ",
-            "Aulas via google meet, podendo ser em grupo ou individuais. ",
-            "Encaixe em sua rotina, com a frequencia que funciona pra você.",
-            "Use o cupom DIARIO2024 e ganhe uma aula experimental!"]}
+            "Lições focadas nas suas necessidades. Aulas via google meet, podendo ser em grupo ou individuais. ",
+            "Encaixe em sua rotina, com a frequencia que funciona pra você. Use o cupom DIARIO2024 e ganhe uma aula experimental!"]}
           style={{
             maxWidth: '600px'
           }}

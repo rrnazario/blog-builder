@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     margin: 10px;
-    padding: 40px;
+    padding: 0px 10px 10px 25px;
     overflow: hidden;
     border-radius: 20px;
     position: relative;
     background-color: #000;
     color: white;
+    max-height: 400px;
 
     transition: all .5s ease-in-out;
 
@@ -17,7 +18,11 @@ export const Container = styled.div`
 
     h2 {
         padding: 30px;
-    }      
+    }  
+    
+    @media (max-width: 1000px) {
+        max-height: 900px;
+    }
 `
 
 export const TitleContainer = styled.div`
@@ -25,7 +30,7 @@ export const TitleContainer = styled.div`
     position: relative;
     align-items: center;
     z-index: 2;
-    color: white;
+    color: white;    
 
     img:hover {
         transform: scale(1.1);
