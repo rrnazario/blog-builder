@@ -7,7 +7,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 170px; 
+    width: 250px; 
 `
 
 export const Icon = styled(FontAwesomeIcon)`

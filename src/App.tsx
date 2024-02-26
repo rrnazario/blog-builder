@@ -6,6 +6,8 @@ import StaticFooter from "./components/StaticFooter";
 import PresentationCard from "./components/PresentationCard";
 
 function App() {
+  const eroUrl = "https://wa.me/634462597?text=Ol%C3%A1%2C%20vi%20o%20seu%20blog%20%22Di%C3%A1rio%20de%20Rol%C3%AA%22%20e%20gostaria%20de%20conhecer%20mais%20sobre%20o%20trabalho%20de%20voc%C3%AAs%21";
+  
   return <>
     <GlobalStyle />
     <StickyHeader />
@@ -26,14 +28,15 @@ function App() {
         style={{
           maxWidth: '1200px'
         }}
-        onClick={() => window.open("https://wa.me/634462597?text=Ol%C3%A1%2C%20vi%20o%20seu%20blog%20%22Di%C3%A1rio%20de%20Rol%C3%AA%22%20e%20gostaria%20de%20conhecer%20mais%20sobre%20o%20trabalho%20de%20voc%C3%AAs%21", "_blank")}
+        onClick={() => window.open(eroUrl, "_blank")}
       />
       <br />
-      <h2>Sigam nossas redes sociais</h2>
+      <h2>Siga nossas redes sociais</h2>
       <SocialMedias
         instagramUrl="https://www.instagram.com/diario.derole"
         youtubeUrl="https://www.youtube.com/@diarioderole"
         tiktokUrl="https://www.tiktok.com/@diario.derole"
+        whatsappUrl="http://chat.whatsapp.com/KC7AQYLbpCmHxoHWwkZJLL"
         size='3x' />
       <hr />
       <br />
@@ -45,45 +48,33 @@ function App() {
         justifyContent: 'center'
       }}>
         <Card
+          key={1}
           buttonCaption="Saiba mais"
-          pictureUrl="http://i.stack.imgur.com/Dj7eP.jpg"
-          title="Blog dos titulos lorem"
-          summary="labore 
-      suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
-      modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
-      totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
-      quasi aliquam eligendi, placeat qui corporis!"
+          pictureUrl="/espanol.png"
+          title="Aprenda Espanhol desde já!"
+          summary={["Faça aulas de castellano falado na Espanha com a professora Gabriela Proença.",
+            "Lições focadas nas suas necessidades. ",
+            "Aulas via google meet, podendo ser em grupo ou individuais. ",
+            "Encaixe em sua rotina, com a frequencia que funciona pra você.",
+            "Use o cupom DIARIO2024 e ganhe uma aula experimental!"]}
           style={{
             maxWidth: '600px'
           }}
+          onClick={() => window.open("https://wa.link/hs1yjp", "_blank")}
         />
 
         <Card
+          key={2}
           buttonCaption="Saiba mais"
-          pictureUrl="http://i.stack.imgur.com/Dj7eP.jpg"
-          title="Blog dos titulos lorem"
-          summary="labore 
-      suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
-      modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
-      totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
-      quasi aliquam eligendi, placeat qui corporis!"
+          pictureUrl="/assessoria.jpg"
+          title="Assessoria jurídica"
+          summary={["Uma parceria com a advogada Andreína Martinez, especializada em extranjería",
+            "Com nossa assessoria, iremos te ajudar em diversos trâmites burocráticos aqui na Espanha, com o respaldo de uma profissional muito competente, com vários anos de experiência.",
+            "Agende sua videochamada e tire todas as suas dúvidas!"]}
           style={{
             maxWidth: '600px'
           }}
-        />
-
-        <Card
-          buttonCaption="Saiba mais"
-          pictureUrl="http://i.stack.imgur.com/Dj7eP.jpg"
-          title="Blog dos titulos lorem"
-          summary="labore 
-      suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
-      modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
-      totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
-      quasi aliquam eligendi, placeat qui corporis!"
-          style={{
-            maxWidth: '600px'
-          }}
+          onClick={() => window.open(eroUrl, "_blank")}
         />
 
       </div>

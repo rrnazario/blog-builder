@@ -38,13 +38,13 @@ export const Container = styled.header`
   }
 
   img {
-    width: 100%;
+    width: 1000px;
     height: 500px;
   }
 
   @media (max-width: 1000px) {
     img {
-      width: 100%;
+      width: 80%;
       height: 200px;
     }
 }

@@ -33,7 +33,6 @@ export const TitleContainer = styled.div`
 `
 
 export const MiddleContainer = styled(TitleContainer)`    
-    padding: 20px;
     @media (max-width: 1000px) {
         flex-wrap: wrap;
         justify-content: center;
