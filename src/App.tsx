@@ -7,7 +7,7 @@ import PresentationCard from "./components/PresentationCard";
 
 function App() {
   const eroUrl = "https://wa.me/634462597?text=Ol%C3%A1%2C%20vi%20o%20seu%20blog%20%22Di%C3%A1rio%20de%20Rol%C3%AA%22%20e%20gostaria%20de%20conhecer%20mais%20sobre%20o%20trabalho%20de%20voc%C3%AAs%21";
-  
+
   return <>
     <GlobalStyle />
     <StickyHeader />
@@ -32,7 +32,7 @@ function App() {
         onClick={() => window.open(eroUrl, "_blank")}
       />
       <br />
-      <h2>Siga nossas redes sociais</h2>
+      <h2 id="contato">Siga nossas redes sociais</h2>
       <SocialMedias
         instagramUrl="https://www.instagram.com/diario.derole"
         youtubeUrl="https://www.youtube.com/@diarioderole"
@@ -41,7 +41,7 @@ function App() {
         size='3x' />
       <hr />
       <br />
-      <h2>Nossas Parcerias</h2>
+      <h2 id="parceria">Nossas Parcerias</h2>
       <div style={{
         display: 'flex',
         flexWrap: 'wrap',
@@ -53,9 +53,9 @@ function App() {
           buttonCaption="Saiba mais"
           pictureUrl="/espanol.png"
           title="Aprenda Espanhol desde já!"
-          summary={["Faça aulas de castellano falado na Espanha com a professora Gabriela Proença.",
+          summary={["Faça aulas de castelhano falado na Espanha com a professora Gabriela Proença.",
             "Lições focadas nas suas necessidades. Aulas via google meet, podendo ser em grupo ou individuais. ",
-            "Encaixe em sua rotina, com a frequencia que funciona pra você. Use o cupom DIARIO2024 e ganhe uma aula experimental!"]}
+            "Encaixe em sua rotina, com a frequência que funciona pra você. Use o cupom DIARIO2024 e ganhe uma aula experimental!"]}
           style={{
             maxWidth: '600px'
           }}
@@ -67,7 +67,7 @@ function App() {
           buttonCaption="Saiba mais"
           pictureUrl="/assessoria.jpg"
           title="Assessoria jurídica"
-          summary={["Uma parceria com a advogada Andreína Martinez, especializada em extranjería",
+          summary={["Uma parceria com a advogada Andreína Martinez, especializada em \"extranjería\".",
             "Com nossa assessoria, iremos te ajudar em diversos trâmites burocráticos aqui na Espanha, com o respaldo de uma profissional muito competente, com vários anos de experiência.",
             "Agende sua videochamada e tire todas as suas dúvidas!"]}
           style={{

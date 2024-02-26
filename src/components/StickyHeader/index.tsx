@@ -16,9 +16,9 @@ function StickyHeader() {
             <img src='/logo_panel.png' alt="Diário de Rolê - Blog" />
             <div className="header" id="myHeader">
                 <nav>
-                    <a href="/html/">Sobre</a> |&nbsp; 
-                    <a href="/css/">Contato</a> |&nbsp;
-                    <a href="/js/">Parcerias</a>
+                    <a href="#sobre">Sobre</a> |&nbsp; 
+                    <a href="#contato">Contato</a> |&nbsp;
+                    <a href="#parceria">Parcerias</a>
                 </nav>
             </div>
         </Styled.Container>

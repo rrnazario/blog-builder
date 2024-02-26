@@ -13,7 +13,7 @@ interface PresentationCardProps {
 }
 
 export default function PresentationCard(props: PresentationCardProps) {
-    return <Styled.Container style={props.style} >
+    return <Styled.Container style={props.style} id="sobre" >
         <Styled.LeftPanel>
             <Styled.Picture src={props.pictureUrl} />
         </Styled.LeftPanel>
