@@ -38,12 +38,13 @@ function App() {
         pictureUrl="/malaga.jpg"
         pictureHeight="350px"
         pictureWidth="350px"
-        title="Porque Málaga?"
+        title="Por que Málaga?"
         summary={[
           "Malaga tem 300 dias de sol, um clima maravilhoso e único em comparação com outras cidades espanholas ou européias.",
           "O povo malaguenho é muito parecido com o brasileiro, sempre solícito, alegre e não dispensa um bom boteco para confraternizar com os amigos!"]}
         style={{
-          maxWidth: '1200px'
+          maxWidth: '1200px',
+          backgroundColor: '#BDE8FA'
         }}
         onClick={() => window.open(eroUrl, "_blank")}
       />
