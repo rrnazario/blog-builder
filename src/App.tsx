@@ -4,6 +4,7 @@ import Card from "./components/Card";
 import StickyHeader from "./components/StickyHeader";
 import StaticFooter from "./components/StaticFooter";
 import PresentationCard from "./components/PresentationCard";
+import Video from "./components/Video";
 
 function App() {
   const eroUrl = "https://wa.me/634462597?text=Ol%C3%A1%2C%20vi%20o%20seu%20blog%20%22Di%C3%A1rio%20de%20Rol%C3%AA%22%20e%20gostaria%20de%20conhecer%20mais%20sobre%20o%20trabalho%20de%20voc%C3%AAs%21";
@@ -32,6 +33,20 @@ function App() {
         onClick={() => window.open(eroUrl, "_blank")}
       />
       <br />
+      <PresentationCard
+        key={919}
+        pictureUrl="/malaga.jpg"
+        pictureHeight="350px"
+        pictureWidth="350px"
+        title="Porque Málaga?"
+        summary={[
+          "Malaga tem 300 dias de sol, um clima maravilhoso e único em comparação com outras cidades espanholas ou européias.",
+          "O povo malaguenho é muito parecido com o brasileiro, sempre solícito, alegre e não dispensa um bom boteco para confraternizar com os amigos!"]}
+        style={{
+          maxWidth: '1200px'
+        }}
+        onClick={() => window.open(eroUrl, "_blank")}
+      />
       <h2 id="contato">Siga nossas redes sociais</h2>
       <SocialMedias
         instagramUrl="https://www.instagram.com/diario.derole"
@@ -78,9 +93,22 @@ function App() {
 
       </div>
       <hr />
+      <h2 id="videos">Nossos melhores videos</h2>
+      <div style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}>
+        <Video url="https://www.youtube.com/embed/-L5-rzrYCqI?si=bz8KUMQpOVvBIbin" />
+        <Video url="https://www.youtube.com/embed/qO5vak8mMBY?si=EwPou6sA6BqHL9MC" />
+        <Video url="https://www.youtube.com/embed/_nzNzvkiuxo" />
+      </div>
+
+      <hr />
       <br />
     </div>
-    <StaticFooter />
+    <StaticFooter spinLogo />
   </>
 }
 

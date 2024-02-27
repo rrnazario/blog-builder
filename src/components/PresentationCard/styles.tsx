@@ -19,6 +19,7 @@ export const Container = styled.div`
     @media (max-width: 1000px) {
         flex-wrap: wrap;
         justify-content: center;
+        padding: 40px 10px 40px 10px;
     }
 `
 
@@ -44,13 +45,18 @@ export const RightPanel = styled.div`
     }
 `
 
-export const Picture = styled.img`
-    width: 250px;
-    height: 250px;
+interface PictureProps {
+    $width?: string,
+    $height?: string,
+    $round?: boolean
+}
+export const Picture = styled.img<PictureProps>`
+    width: ${props => `${props.$width ?? '250px'};`}
+    height: ${props => `${props.$height ?? '250px'};`}
     top: 0;
     left: 0;
     vertical-align: middle;
-    border-radius: 50%;
+    border-radius: ${props => `${props.$round ?? '0px'};`}
 
     transition: all .2s ease-in-out; 
 `

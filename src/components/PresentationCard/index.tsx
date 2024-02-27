@@ -4,18 +4,27 @@ import * as Styled from './styles'
 
 interface PresentationCardProps {
     pictureUrl?: string,
+    pictureWidth?: string,
+    pictureHeight?: string,
+    pictureRound?: boolean,
     title?: string,
     subtitle?: string,
     summary?: string[],
     buttonCaption?: string,
     onClick?: (e: any) => void,
-    style?: CSSProperties
+    style?: CSSProperties,
+
 }
 
 export default function PresentationCard(props: PresentationCardProps) {
     return <Styled.Container style={props.style} id="sobre" >
         <Styled.LeftPanel>
-            <Styled.Picture src={props.pictureUrl} />
+            <Styled.Picture
+                src={props.pictureUrl}
+                $width={props.pictureWidth}
+                $height={props.pictureHeight}
+                $round={props.pictureRound}
+            />
         </Styled.LeftPanel>
         <Styled.RightPanel>
             <h2>{props.title}</h2>

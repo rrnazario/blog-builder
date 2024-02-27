@@ -18,7 +18,8 @@ function StickyHeader() {
                 <nav>
                     <a href="#sobre">Sobre</a> |&nbsp; 
                     <a href="#contato">Contato</a> |&nbsp;
-                    <a href="#parceria">Parcerias</a>
+                    <a href="#parceria">Parcerias</a> |&nbsp;
+                    <a href="#videos">Videos</a>
                 </nav>
             </div>
         </Styled.Container>
