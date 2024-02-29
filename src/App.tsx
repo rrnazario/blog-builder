@@ -94,16 +94,16 @@ function App() {
 
       </div>
       <hr />
-      <h2 id="videos">Nossos melhores videos</h2>
+      <h2 id="videos">Nossos videos imperdíveis</h2>
       <div style={{
         display: 'flex',
         flexWrap: 'wrap',
         alignItems: 'center',
         justifyContent: 'center'
       }}>
-        <Video url="https://www.youtube.com/embed/-L5-rzrYCqI?si=bz8KUMQpOVvBIbin" />
-        <Video url="https://www.youtube.com/embed/qO5vak8mMBY?si=EwPou6sA6BqHL9MC" />
-        <Video url="https://www.youtube.com/embed/_nzNzvkiuxo" />
+        <Video url="https://www.youtube.com/embed/NcXahr80JhA?si=HL96yNL6UgRNtoJG" />
+        <Video url="https://www.youtube.com/embed/pyX-p7Edn2E?si=sWsjlTRoTvmKFt3a" />
+        <Video url="https://www.youtube.com/embed/YO9lBH1DMNk?si=OJ6U6-zShZUKfEma" />
       </div>
 
       <hr />
