@@ -40,6 +40,8 @@ function App() {
         pictureWidth="350px"
         title="Por que Málaga?"
         summary={[
+          "Praia, mar azul, clima mediterrâneo, cultura, arte e muita animação, Málaga é tudo isso. Essa cidade espanhola que fica no sul do país, na região da Andaluzia, foi eleita a melhor do mundo para se viver para expatriados pelo Expat City Ranking de 2023.",
+          "A lista é baseada em dados coletados de forma online pela pesquisa Expat Insider. Em 2023, ela foi realizada pela InterNations, que é uma comunidade global de pessoas que vivem e trabalham no exterior. Foram elas que levaram a cidade da Andaluzia à primeira posição.",
           "Malaga tem 300 dias de sol, um clima maravilhoso e único em comparação com outras cidades espanholas ou européias.",
           "O povo malaguenho é muito parecido com o brasileiro, sempre solícito, alegre e não dispensa um bom boteco para confraternizar com os amigos!"]}
         style={{
