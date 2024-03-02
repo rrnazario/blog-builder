@@ -3,6 +3,7 @@ import RoundedButton from '../RoundedButton'
 import * as Styled from './styles'
 
 interface PresentationCardProps {
+    id: string,
     pictureUrl?: string,
     pictureWidth?: string,
     pictureHeight?: string,
@@ -17,7 +18,7 @@ interface PresentationCardProps {
 }
 
 export default function PresentationCard(props: PresentationCardProps) {
-    return <Styled.Container style={props.style} id="sobre" >
+    return <Styled.Container style={props.style} id={props.id} >
         <Styled.LeftPanel>
             <Styled.Picture
                 src={props.pictureUrl}

@@ -18,6 +18,7 @@ function App() {
       alignItems: 'center'
     }}>
       <PresentationCard
+        id="sobre"
         key={99}
         buttonCaption="Fale conosco"
         pictureUrl="/pres3.png"
@@ -34,6 +35,7 @@ function App() {
       />
       <br />
       <PresentationCard
+        id="malaga"
         key={919}
         pictureUrl="/malaga.jpg"
         pictureHeight="350px"
