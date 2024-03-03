@@ -13,7 +13,7 @@ function StickyHeader() {
 
     return <>
         <Styled.Container>
-            <img src='/logo_panel.png' alt="Diário de Rolê - Blog" />
+            <img src='/logo_panel.png' alt="Diário de Rolê - Logo do blog" />
             <div className="header" id="myHeader">
                 <nav>
                     <a href="#sobre">Sobre</a> |&nbsp; 
