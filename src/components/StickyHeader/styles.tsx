@@ -11,7 +11,7 @@ export const Container = styled.header`
     padding: 10px 16px;
     background-color: #1a1919;
     color: #f1f1f1;
-    width: 100.8%;
+    width: 100.7%;
   }
   
   .content {
