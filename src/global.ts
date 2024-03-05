@@ -2,8 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 
 const GlobalStyle = createGlobalStyle`
-*{
-  margin: 0px;  
+*{     
   padding: 0;
     outline:0;
     box-sizing:border-box;
@@ -18,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
     --text-secondary: #f78da7;
     --text-tertiary: #4f6ee4;
     --accent: purple;
+    
   }
   [data-theme='dark'] {
     --background: black;
