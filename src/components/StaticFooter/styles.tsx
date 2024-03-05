@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.footer`
     display:flex;
     flex-direction: column;
     background-color: #1a1919;
@@ -9,6 +9,7 @@ export const Container = styled.div`
     color: #f1f1f1;
     align-items: center;
     justify-content: space-between;
+    margin: -7px;
 
     a {
     color: var(--text-secondary);
@@ -20,7 +21,7 @@ export const Container = styled.div`
     }
     @media (max-width: 1000px) {
         max-height: 600px;
-    }
+    }    
 `
 
 export const Detail = styled.div`    
