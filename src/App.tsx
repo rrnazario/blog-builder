@@ -98,7 +98,7 @@ function App() {
 
       </div>
       <hr />
-      <h2 id="videos">Nossos videos imperdíveis</h2>
+      <h2 id="videos">Nossos vídeos imperdíveis</h2>
       <div style={{
         display: 'flex',
         flexWrap: 'wrap',
