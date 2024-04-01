@@ -5,6 +5,7 @@ import StickyHeader from "./components/StickyHeader";
 import StaticFooter from "./components/StaticFooter";
 import PresentationCard from "./components/PresentationCard";
 import Video from "./components/Video";
+import { pageRoutes } from "./routes";
 
 function App() {
   const eroUrl = "https://wa.me/634462597?text=Ol%C3%A1%2C%20vi%20o%20seu%20blog%20%22Di%C3%A1rio%20de%20Rol%C3%AA%22%20e%20gostaria%20de%20conhecer%20mais%20sobre%20o%20trabalho%20de%20voc%C3%AAs%21";
@@ -93,7 +94,7 @@ function App() {
           style={{
             maxWidth: '600px'
           }}
-          onClick={() => window.open(eroUrl, "_blank")}
+          onClick={() => window.open(pageRoutes.FORMULARIO, '_blank')}
         />
 
       </div>
