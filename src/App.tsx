@@ -1,5 +1,5 @@
 import SocialMedias from "./components/SocialMedias";
-import GlobalStyle from "./global";
+import GlobalStyle from "./global-style";
 import Card from "./components/Card";
 import StickyHeader from "./components/StickyHeader";
 import StaticFooter from "./components/StaticFooter";
