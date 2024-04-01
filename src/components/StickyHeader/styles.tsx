@@ -45,7 +45,7 @@ export const Container = styled.header`
   @media (max-width: 1000px) {
     img {
       width: 80%;
-      height: 200px;
+      height: 80%;
     }
 
     .header {
