@@ -1,11 +1,6 @@
 import { FormControl, InputLabel, Select, SxProps } from "@mui/material";
 import { useState } from "react";
 
-interface YesNoComboItem {
-    value: number,
-    label: string
-}
-
 interface YesNoComboProps {
     label: string,
     id: string,
