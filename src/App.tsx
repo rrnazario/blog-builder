@@ -32,7 +32,7 @@ function App() {
         style={{
           maxWidth: '1200px'
         }}
-        onClick={() => window.open(eroUrl, "_blank")}
+        onClick={() => window.open(pageRoutes.FORMULARIO, '_blank')}
       />
       <br />
       <PresentationCard
