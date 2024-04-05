@@ -24,7 +24,7 @@ export default function ContactForm() {
     const onSendInfo = () => {
         if (!isFormValid()) return;
 
-        let url = 'https://wa.me/634462597?text=';
+        let url = 'https://wa.me/34634462597?text=';
 
         url += `Nome: ${form.name}\n`
         if (form.peopleNumber) url += `Nº Pessoas: ${form.peopleNumber}\n`
