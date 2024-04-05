@@ -28,11 +28,11 @@ export default function ContactForm() {
 
         url += `Nome: ${form.name}\n`
         if (form.peopleNumber) url += `Nº Pessoas: ${form.peopleNumber}\n`
-        if (form.hasDocs) url += `Docs? ${form.hasDocs ? 'Sim' : 'Não'}\n`
-        if (form.hasDocs) url += `Crianças? ${form.hasKids ? 'Sim' : 'Não'}\n`
-        if (form.hasJob) url += `Emprego? ${form.hasJob ? 'Sim' : 'Não'}\n`
-        if (form.hasLivedAbroad) url += `Morou fora antes? ${form.hasLivedAbroad ? 'Sim' : 'Não'}\n`
-        if (form.speakAnotherLaguages) url += `Outros idiomas? ${form.speakAnotherLaguages ? 'Sim' : 'Não'}\n`
+        if (form.hasDocs) url += `Docs? ${form.hasDocs === 1 ? 'Sim' : 'Não'}\n`
+        if (form.hasDocs) url += `Crianças? ${form.hasKids === 1 ? 'Sim' : 'Não'}\n`
+        if (form.hasJob) url += `Emprego? ${form.hasJob === 1 ? 'Sim' : 'Não'}\n`
+        if (form.hasLivedAbroad) url += `Morou fora antes? ${form.hasLivedAbroad === 1 ? 'Sim' : 'Não'}\n`
+        if (form.speakAnotherLaguages) url += `Outros idiomas? ${form.speakAnotherLaguages === 1 ? 'Sim' : 'Não'}\n`
         if (form.whenCome) url += `Quando: ${form.whenCome}\n`
         if (form.workArea) url += `Área: ${form.workArea}\n`
         if (form.malagaPerspective) url += `Perspectiva: ${form.malagaPerspective}`
