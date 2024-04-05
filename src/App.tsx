@@ -58,7 +58,6 @@ function App() {
         instagramUrl="https://www.instagram.com/diario.derole"
         youtubeUrl="https://www.youtube.com/@diarioderole"
         tiktokUrl="https://www.tiktok.com/@diario.derole"
-        whatsappUrl="http://chat.whatsapp.com/KC7AQYLbpCmHxoHWwkZJLL"
         size='3x' />
       <hr />
       <br />
