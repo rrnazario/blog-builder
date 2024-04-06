@@ -4,6 +4,7 @@ import StickyHeader from "src/components/StickyHeader";
 import GlobalStyle from "src/global-style";
 import './contact-form.css'
 import YesNoCombo from "src/components/YesNoCombo/yesnocombo.component";
+import LimitedTextField from "src/components/LimitedTextField/limited-text-field.component";
 
 interface FormValues {
     name: string,
@@ -57,9 +58,9 @@ export default function ContactForm() {
         }}>
 
             <h1>Formulario de contato</h1>
-            <h5>Use respostas curtas e objetivas para melhor atendermos você!</h5>
 
-            <TextField
+            <LimitedTextField
+                maxLength={30}
                 className='txt-box txt-box-medium'
                 id="nome"
                 label="Nome"
@@ -129,29 +130,28 @@ export default function ContactForm() {
                 }}
             />
 
-            <TextField
+            <LimitedTextField
+                maxLength={15}
                 className='txt-box txt-box-medium'
                 id="quando-pretende-mudar"
                 label="Quando pretende se mudar?"
                 variant="standard"
                 value={form.whenCome}
                 onChange={(e) => setForm({ ...form, whenCome: e.target.value })}
-                error={(form.whenCome?.length ?? 0) > 15}
-                helperText={(form.whenCome?.length ?? 0) > 15 ? 'Resposta muito longa' : ''}
             />
 
-            <TextField
+            <LimitedTextField
+                maxLength={30}
                 className='txt-box txt-box-medium'
                 id="area-trabalho-atual"
                 label="Área de trabalho atual"
                 variant="standard"
                 value={form.workArea}
                 onChange={(e) => setForm({ ...form, workArea: e.target.value })}
-                error={(form.workArea?.length ?? 0) > 30}
-                helperText={(form.workArea?.length ?? 0) > 30 ? 'Resposta muito longa' : ''}
             />
 
-            <TextField
+            <LimitedTextField
+                maxLength={100}
                 className='txt-box txt-box-medium'
                 id="perspectivas-malaga"
                 label="Quais suas perspectivas sobre Málaga?"
@@ -160,8 +160,6 @@ export default function ContactForm() {
                 rows={4}
                 value={form.malagaPerspective}
                 onChange={(e) => setForm({ ...form, malagaPerspective: e.target.value })}
-                error={(form.malagaPerspective?.length ?? 0) > 100}
-                helperText={(form.malagaPerspective?.length ?? 0) > 100 ? 'Resposta muito longa' : ''}
             />
 
             <Button
