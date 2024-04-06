@@ -10,7 +10,7 @@ export default function LimitedTextField(props: LimitedTextFieldProps) {
 
     const internalOnChange = async (e: any) => {
 
-        if ((e.target.value as String).length < props.maxLength) {
+        if ((e.target.value as String).length <= props.maxLength) {
             await setValue(e.target.value);
 
             if (props.onChange)
