@@ -1,14 +1,14 @@
 import { TextField, TextFieldProps } from "@mui/material";
 import { useState } from "react";
 
-export type LimitedTextFieldProps = TextFieldProps & {
+type LimitedTextFieldProps = TextFieldProps & {
     maxLength: number,
 };
 
 export default function LimitedTextField(props: LimitedTextFieldProps) {
     const [value, setValue] = useState();
 
-    const internalOnChange = async (e: any) => {
+    const onChange = async (e: any) => {
 
         if ((e.target.value as String).length <= props.maxLength) {
             await setValue(e.target.value);
@@ -20,7 +20,7 @@ export default function LimitedTextField(props: LimitedTextFieldProps) {
 
     return <TextField
         {...props}
-        onChange={(e) => internalOnChange(e)}
+        onChange={onChange}
         value={value}
     />
 }
