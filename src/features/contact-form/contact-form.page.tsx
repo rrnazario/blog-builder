@@ -52,12 +52,7 @@ export default function ContactForm() {
     return <>
         <GlobalStyle />
         <StickyHeader />
-        <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            gap: '20px'
-        }}>
+        <div className="container">
             {sent ? <h5>
                 {'Você será redirecionado para o Whatsapp, confirme o envio da mensagem lá.'}</h5> : <>
                 <h1>Formulario de contato</h1>
