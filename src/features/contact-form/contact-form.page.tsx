@@ -6,6 +6,8 @@ import './contact-form.css'
 import YesNoCombo from "src/components/YesNoCombo/yesnocombo.component";
 import LimitedTextField from "src/components/LimitedTextField/limited-text-field.component";
 import ContactFormService from "./contact-form.service";
+import moment from "moment";
+import { toast } from "react-toastify";
 
 interface FormValues {
     nome: string,
@@ -42,42 +44,40 @@ export default function ContactForm() {
         const maxTextAllowed = 1700;
         if (!isFormValid()) return;
 
-        const props = Object.getOwnPropertyNames(form).filter(f => f !== 'whatsapp');
+        const props = Object.getOwnPropertyNames(form).filter(f => f !== 'whatsapp').sort();
 
-        let currentMessage = `Inicio da mensagem de '${form.whatsapp}'\n\n`;
+        let currentMessage = `**Inicio da mensagem de '${form.whatsapp}**'\n\n`;
         props.forEach(async (prop: string) => {
-            
-            
-            
+            const tsKey = prop as keyof {};
+            currentMessage += `${toWords(prop)}: ${defineValue(form[tsKey])}\n\n`;
+
+
             if (currentMessage.length >= maxTextAllowed) {
                 await service.sendMessage(currentMessage);
                 currentMessage = '';
             }
-            
-            const tsKey = prop as keyof {}
-            console.log(`${toWords(prop)}: ${defineValue(form[tsKey])}`);
         });
 
+        if (currentMessage !== '') {
+            await service.sendMessage(currentMessage);
+        }
 
-        return;
-
-        // let url = `Nome: ${form.nome}\n`
-        // url += `WhatsApp: ${form.whatsapp}\n`
-        // if (form.quantasPessoas) url += `Nº Pessoas: ${form.quantasPessoas}\n`
-        // if (form.temDocumento) url += `Docs? ${form.temDocumento === 1 ? 'Sim' : 'Não'}\n`
-        // if (form.temDocumento) url += `Crianças? ${form.temCrianca === 1 ? 'Sim' : 'Não'}\n`
-        // if (form.temEmprego) url += `Emprego? ${form.temEmprego === 1 ? 'Sim' : 'Não'}\n`
-        // if (form.JaViveuFora) url += `Morou fora antes? ${form.JaViveuFora === 1 ? 'Sim' : 'Não'}\n`
-        // if (form.falaOutrosIdiomas) url += `Outros idiomas? ${form.falaOutrosIdiomas === 1 ? 'Sim' : 'Não'}\n`
-        // if (form.quandoVem) url += `Quando vem? ${form.quandoVem}\n`
-        // if (form.areaTrabalho) url += `Área de trabalho: ${form.areaTrabalho}\n`
-        // if (form.perspectivaMalaga) url += `Perspectiva: ${form.perspectivaMalaga}`
-
-        //await service.sendMessage(url);
-        //await setSent(true);
+        localStorage.setItem('lastmessage', moment().toString());
+        await setSent(true);
     }
 
     const isFormValid = (): boolean => {
+        //prevent several messages at once
+        let lastMessage = localStorage.getItem('lastmessage');
+        if (lastMessage) {
+            const lastMessageMinutes = moment().diff(lastMessage, 'minutes');
+            if (lastMessageMinutes < 10) {
+                toast.error('É necessário aguardar alguns minutos para enviar outro formulário.');
+
+                return false;
+            }
+        }
+
         if (!form.nome || form.nome.trim() === '') return false;
         if (!form.whatsapp || form.whatsapp.trim() === '') return false;
 
