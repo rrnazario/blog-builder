@@ -9,13 +9,17 @@ export default function LimitedTextField(props: LimitedTextFieldProps) {
     const [value, setValue] = useState();
 
     const onChange = async (e: any) => {
-
-        if ((e.target.value as String).length <= props.maxLength) {
+        let strValue = (e.target.value as String);
+        if (strValue.length <= props.maxLength) {
             await setValue(e.target.value);
-
-            if (props.onChange)
-                await props.onChange(e);
         }
+        else {
+            const result = strValue.substring(0, props.maxLength) as any;
+            await setValue(result);
+        }
+
+        if (props.onChange)
+            await props.onChange(e);
     }
 
     return <TextField

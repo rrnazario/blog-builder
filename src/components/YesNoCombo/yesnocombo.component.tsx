@@ -4,7 +4,7 @@ import { useState } from "react";
 interface YesNoComboProps {
     label: string,
     id: string,
-    onChange: (e?: number) => Promise<void>,
+    onChange: (e?: boolean) => Promise<void>,
     sx?:SxProps
 }
 
@@ -13,7 +13,10 @@ export default function YesNoCombo({ onChange, label, id, sx }: YesNoComboProps)
 
     const internalChange = async (value: any) => {
         await setValue(value.target.value);
-        await onChange(value.target.value)
+        await onChange(value.target.value !== undefined
+            ? value.target.value === "1"
+            : undefined
+        )
     }
 
     return <FormControl variant="standard">

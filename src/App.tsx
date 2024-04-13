@@ -10,7 +10,6 @@ import { useNavigate } from "react-router-dom";
 
 function App() {
   const navigator = useNavigate();
-  const eroUrl = "https://wa.me/34634462597?text=Ol%C3%A1%2C%20vi%20o%20seu%20blog%20%22Di%C3%A1rio%20de%20Rol%C3%AA%22%20e%20gostaria%20de%20conhecer%20mais%20sobre%20o%20trabalho%20de%20voc%C3%AAs%21";
 
   return <>
     <GlobalStyle />
@@ -53,7 +52,7 @@ function App() {
           maxWidth: '1200px',
           backgroundColor: '#BDE8FA'
         }}
-        onClick={() => window.open(eroUrl, "_blank")}
+        onClick={() => navigator(pageRoutes.FORMULARIO)}
       />
       <h2 id="contato">Siga nossas redes sociais</h2>
       <SocialMedias
@@ -95,7 +94,7 @@ function App() {
           style={{
             maxWidth: '600px'
           }}
-          onClick={() => window.open(pageRoutes.FORMULARIO, '_blank')}
+          onClick={() => navigator(pageRoutes.FORMULARIO)}
         />
 
       </div>
