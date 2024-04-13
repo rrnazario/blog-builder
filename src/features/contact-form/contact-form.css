@@ -2,6 +2,11 @@ h5 {
   text-align: center;
 }
 
+.back {
+  color: var(--text-tertiary);
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   flex-direction: column;

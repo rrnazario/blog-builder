@@ -88,8 +88,10 @@ export default function ContactForm() {
         <GlobalStyle />
         <StickyHeader />
         <div className="container">
-            {sent ? <h5>
-                {'Sua mensagem foi enviada com sucesso!'}</h5> : <>
+            {sent ? <>
+                <h5>{'Sua mensagem foi enviada com sucesso!'}</h5>
+                <a className="back" href="/">{'Voltar ao inicio'}</a>
+            </> : <>
                 <h1>Formulario de contato</h1>
 
                 <LimitedTextField
