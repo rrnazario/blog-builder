@@ -22,7 +22,7 @@ function App() {
       <PresentationCard
         id="sobre"
         key={99}
-        buttonCaption="Fale conosco"
+        buttonCaption="Contrate nossa assessoria"
         pictureUrl="/pres3.png"
         title="Salve galera!"
         summary={[
@@ -80,7 +80,7 @@ function App() {
           style={{
             maxWidth: '600px'
           }}
-          onClick={() => window.open("https://wa.link/hs1yjp", "_blank")}
+          onClick={() => window.open("https://wa.link/t94a0e", "_blank")}
         />
 
         <Card

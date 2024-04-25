@@ -95,10 +95,10 @@ export default function ContactForm() {
                 <h1>Formulario de contato</h1>
 
                 <LimitedTextField
-                    maxLength={30}
+                    maxLength={80}
                     className='txt-box txt-box-medium'
                     id="nome"
-                    label="Nome"
+                    label="Nome e sobrenome"
                     variant="standard"
                     value={form.nome}
                     onChange={(e) => setForm({ ...form, nome: e.target.value })}
