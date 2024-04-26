@@ -93,6 +93,7 @@ export default function ContactForm() {
                 <a className="back" href="/">{'Voltar ao inicio'}</a>
             </> : <>
                 <h1>Formulario de contato</h1>
+                <h5>{'Preencha os dados a seguir para que nosso orçamento seja o mais assertivo para o seu caso.'}</h5>
 
                 <LimitedTextField
                     maxLength={80}
