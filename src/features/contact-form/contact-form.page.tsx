@@ -214,7 +214,7 @@ export default function ContactForm() {
                     variant="contained"
                     onClick={onSendInfo}
                 >
-                    Enviar informações
+                    Solicitar Orçamento
                 </Button>
             </>}
         </div>
