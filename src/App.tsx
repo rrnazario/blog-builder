@@ -22,14 +22,14 @@ function App() {
       <PresentationCard
         id="sobre"
         key={99}
-        buttonCaption="Contrate nossa assessoria"
+        buttonCaption="+ Assessoria"
         pictureUrl="/pres3.png"
         title="Salve galera!"
         summary={[
-          "Se você caiu aqui de paraquedas, nós somos Gabi e Éro, um casal brasileiro que decidiu construir uma vida juntos na ensolarada Málaga, na Espanha.",
-          "Compartilhamos o nosso dia a dia, dicas sobre a vida na Espanha, curiosidades locais e tudo o que envolve a imigração e os trâmites necessários para viver legalmente no país.",
-          "Além de compartilhar nossas experiências, também oferecemos assessoria para quem deseja imigrar para a Espanha, tornando esse processo tão burocrático mais fácil e descomplicado. Desde a obtenção de visto até a busca por moradia, estamos aqui para te ajudar em cada passo do caminho.",
-          "Se você está pensando em embarcar nessa aventura de viver na Espanha, que tal contar com a nossa experiência e expertise para tornar essa transição mais tranquila e segura? Entre em contato conosco e vamos juntos fazer desse sonho uma realidade!"]}
+            "Salve galera!",
+            "Se você caiu aqui de paraquedas, nós somos Gabi e Éro, um casal brasileiro que decidiu construir uma vida juntos na ensolarada Málaga, na Espanha.",
+            "Compartilhamos o nosso dia a dia, dicas sobre a vida na Espanha, curiosidades locais e tudo o que envolve a imigração e a adaptação a um novo país.",
+            "Mostramos a vida como ela é, seus luxos, perrengues, viagens e trabalho.. muito trabalho!!"]}
         style={{
           maxWidth: '1200px'
         }}
