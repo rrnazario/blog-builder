@@ -20,6 +20,7 @@ function App() {
       alignItems: 'center'
     }}>
       <PresentationCard
+        hideButton
         id="sobre"
         key={99}
         buttonCaption="+ Assessoria"
@@ -29,7 +30,7 @@ function App() {
             "Salve galera!",
             "Se você caiu aqui de paraquedas, nós somos Gabi e Éro, um casal brasileiro que decidiu construir uma vida juntos na ensolarada Málaga, na Espanha.",
             "Compartilhamos o nosso dia a dia, dicas sobre a vida na Espanha, curiosidades locais e tudo o que envolve a imigração e a adaptação a um novo país.",
-            "Mostramos a vida como ela é, seus luxos, perrengues, viagens e trabalho.. muito trabalho!!"]}
+            "Mostramos a vida como ela é, seus luxos, perrengues, viagens e trabalho... muito trabalho!!"]}
         style={{
           maxWidth: '1200px'
         }}
@@ -37,6 +38,7 @@ function App() {
       />
       <br />
       <PresentationCard
+        hideButton
         id="malaga"
         key={919}
         pictureUrl="/malaga.jpg"
@@ -51,6 +53,34 @@ function App() {
         style={{
           maxWidth: '1200px',
           backgroundColor: '#BDE8FA'
+        }}
+        onClick={() => navigator(pageRoutes.FORMULARIO)}
+      />
+      <br />
+      <PresentationCard
+        id="como-podemos-ajudar-id"
+        key={919}
+        pictureUrl="/ajuda.jpeg"
+        pictureHeight="350px"
+        pictureWidth="350px"
+        title="Como podemos te ajudar?"
+        buttonCaption="+ Assessoria"
+        summary={[
+          "Na nossa consultoria via videochamada o objetivo é que você possa tirar as suas duvidas. Solicitamos que preencha um formulário explicando a sua situação para que possa chegar aqui mais preparado pra essa grande mudança.", 
+          "Com certeza esse processo vai ser mais tranquilo com informações direcionadas que te ajudarão no seu planejamento.",          
+          "Mas... que tipo de dúvidas vocês podem esclarecer?",
+          "- Qual o melhor mês do ano pra me mudar pra Málaga?",
+          "- Como funciona o processo de aluguel de imóveis na região? Vocês podem me ajudar na busca ou até mesmo visitar um imóvel por mim?",
+          "- Como posso buscar trabalho? Quais as áreas de trabalho com mais vagas na região?",
+          "- Quanto preciso de dinheiro pra recomeçar minha vida na Espanha?",
+          "- Que tipo de visto eu preciso pra trabalhar em Málaga?",
+          "- Quais as cidades indicam pra viver segundo as necessidades da nossa família?",
+          "Se necessário vamos conectar você a advogados parceiros (que podem te ajudar tanto em solucionar duvidas quanto fazer algum processo burocrático), corretores de imóveis de confiança e professora de espanhol pra começar a se preparar com o idioma!",
+          "",
+          "* todos os serviços serão realizados mediante comprovante de pagamento enviado 24 horas antes do atendimento."]}
+        style={{
+          maxWidth: '1200px',
+          backgroundColor: '#FAD593'
         }}
         onClick={() => navigator(pageRoutes.FORMULARIO)}
       />

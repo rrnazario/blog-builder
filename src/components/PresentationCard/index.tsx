@@ -14,7 +14,7 @@ interface PresentationCardProps {
     buttonCaption?: string,
     onClick?: (e: any) => void,
     style?: CSSProperties,
-
+    hideButton?:boolean,
 }
 
 export default function PresentationCard(props: PresentationCardProps) {
@@ -34,7 +34,7 @@ export default function PresentationCard(props: PresentationCardProps) {
                 <br />
             </>}
             {props.summary && props.summary.map((value, index) => <><p key={index}>{value}</p></>)}
-            <RoundedButton caption={props.buttonCaption ?? 'Saiba mais'} style={{
+            {props.hideButton !== true && <RoundedButton caption={props.buttonCaption ?? 'Saiba mais'} style={{
                 textAlign: 'center',
                 maxWidth: '200px',
                 borderRadius: '10px',
@@ -43,7 +43,7 @@ export default function PresentationCard(props: PresentationCardProps) {
                 color: 'black'
             }}
                 onClick={props.onClick}
-            />
+            />}
         </Styled.RightPanel>
 
     </Styled.Container>
