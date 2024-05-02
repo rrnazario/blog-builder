@@ -12,7 +12,7 @@ import { toast } from "react-toastify";
 interface FormValues {
     nome: string,
     whatsapp: string,
-    quantasPessoas?: number,
+    quantasPessoasMais?: number,
     temDocumento?: boolean,
     temCrianca?: boolean,
     temEmprego?: boolean,
@@ -124,11 +124,11 @@ export default function ContactForm() {
                     label="Quantas pessoas virão com você?"
                     variant="standard"
                     type="number"
-                    value={form.quantasPessoas}
-                    onChange={(e) => setForm({ ...form, quantasPessoas: parseInt(e.target.value) })}
+                    value={form.quantasPessoasMais}
+                    onChange={(e) => setForm({ ...form, quantasPessoasMais: parseInt(e.target.value) })}
                 />
 
-                {form.quantasPessoas && form.quantasPessoas > 0 ? <YesNoCombo
+                {form.quantasPessoasMais && form.quantasPessoasMais > 0 ? <YesNoCombo
                     id="virao-criancas"
                     label='Virão crianças com você?'
                     onChange={async (e) => await setForm({ ...form, temCrianca: e })}
