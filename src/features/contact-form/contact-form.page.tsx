@@ -14,9 +14,9 @@ interface FormValues {
     whatsapp: string,
     quantasPessoasMais?: number,
     temDocumento?: boolean,
-    temCrianca?: boolean,
-    temEmprego?: boolean,
-    JaViveuFora?: boolean,
+    vemComCriancas?: boolean,
+    vemComEmpregoGarantido?: boolean,
+    jaViveuFora?: boolean,
     falaOutrosIdiomas?: boolean,
     quandoVem?: string,
     areaTrabalho?: string,
@@ -43,6 +43,7 @@ export default function ContactForm() {
     const onSendInfo = async () => {
         const maxTextAllowed = 1700;
         if (!isFormValid()) return;
+        localStorage.setItem('lastmessage', moment().toString());
 
         const props = Object.getOwnPropertyNames(form).filter(f => f !== 'whatsapp').sort();
 
@@ -62,7 +63,6 @@ export default function ContactForm() {
             await service.sendMessage(currentMessage);
         }
 
-        localStorage.setItem('lastmessage', moment().toString());
         await setSent(true);
     }
 
@@ -131,7 +131,7 @@ export default function ContactForm() {
                 {form.quantasPessoasMais && form.quantasPessoasMais > 0 ? <YesNoCombo
                     id="virao-criancas"
                     label='Virão crianças com você?'
-                    onChange={async (e) => await setForm({ ...form, temCrianca: e })}
+                    onChange={async (e) => await setForm({ ...form, vemComCriancas: e })}
                     sx={{
                         width: 400,
                         mb: '20px'
@@ -151,7 +151,7 @@ export default function ContactForm() {
                 <YesNoCombo
                     id="ja-vem-com-emprego"
                     label='Já vem com emprego garantido?'
-                    onChange={async (e) => await setForm({ ...form, temEmprego: e })}
+                    onChange={async (e) => await setForm({ ...form, vemComEmpregoGarantido: e })}
                     sx={{
                         width: 400,
                         mb: '20px'
@@ -161,7 +161,7 @@ export default function ContactForm() {
                 <YesNoCombo
                     id="morou-em-outro-local"
                     label='Já morou em outro país além do Brasil?'
-                    onChange={async (e) => await setForm({ ...form, JaViveuFora: e })}
+                    onChange={async (e) => await setForm({ ...form, jaViveuFora: e })}
                     sx={{
                         width: 400,
                         mb: '20px'
