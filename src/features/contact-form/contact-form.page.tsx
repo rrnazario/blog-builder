@@ -12,7 +12,7 @@ import { toast } from "react-toastify";
 interface FormValues {
     nome: string,
     whatsapp: string,
-    email: string,
+    email?: string,
     quantasPessoasMais?: number,
     temDocumento?: boolean,
     vemComCriancas?: boolean,
