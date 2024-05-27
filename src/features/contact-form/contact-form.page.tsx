@@ -12,6 +12,7 @@ import { toast } from "react-toastify";
 interface FormValues {
     nome: string,
     whatsapp: string,
+    email: string,
     quantasPessoasMais?: number,
     temDocumento?: boolean,
     vemComCriancas?: boolean,
@@ -117,6 +118,16 @@ export default function ContactForm() {
                     onChange={(e) => setForm({ ...form, whatsapp: e.target.value })}
                     error={!form.whatsapp || form.whatsapp.trim() === ''}
                     helperText={'Obrigatório (Adicione o código do país. Ex: +553298852-2331)'}
+                />
+                <LimitedTextField
+                    maxLength={30}
+                    className='txt-box txt-box-medium'
+                    id="email-contato"
+                    label="E-mail"
+                    type="email"
+                    variant="standard"
+                    value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
                 />
                 <TextField
                     className='txt-box txt-box-medium'
