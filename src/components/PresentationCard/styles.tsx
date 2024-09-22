@@ -48,7 +48,7 @@ export const RightPanel = styled.div`
 interface PictureProps {
     $width?: string,
     $height?: string,
-    $round?: boolean
+    $round?: string
 }
 export const Picture = styled.img<PictureProps>`
     width: ${props => `${props.$width ?? '250px'};`}

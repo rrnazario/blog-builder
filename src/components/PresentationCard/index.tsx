@@ -7,7 +7,7 @@ interface PresentationCardProps {
     pictureUrl?: string,
     pictureWidth?: string,
     pictureHeight?: string,
-    pictureRound?: boolean,
+    pictureRound?: string,
     title?: string,
     subtitle?: string,
     summary?: string[],

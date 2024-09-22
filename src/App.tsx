@@ -27,10 +27,9 @@ function App() {
         pictureUrl="/pres3.png"
         title="Salve galera!"
         summary={[
-            "Salve galera!",
-            "Se você caiu aqui de paraquedas, nós somos Gabi e Éro, um casal brasileiro que decidiu construir uma vida juntos na ensolarada Málaga, na Espanha.",
-            "Compartilhamos o nosso dia a dia, dicas sobre a vida na Espanha, curiosidades locais e tudo o que envolve a imigração e a adaptação a um novo país.",
-            "Mostramos a vida como ela é, seus luxos, perrengues, viagens e trabalho... muito trabalho!!"]}
+          "Se você caiu aqui de paraquedas, nós somos Gabi e Éro, um casal brasileiro que decidiu construir uma vida juntos na ensolarada Málaga, na Espanha.",
+          "Compartilhamos o nosso dia a dia, dicas sobre a vida na Espanha, curiosidades locais e tudo o que envolve a imigração e a adaptação a um novo país.",
+          "Mostramos a vida como ela é, seus luxos, perrengues, viagens e trabalho... muito trabalho!!"]}
         style={{
           maxWidth: '1200px'
         }}
@@ -66,8 +65,8 @@ function App() {
         title="Como podemos te ajudar?"
         buttonCaption="+ Assessoria"
         summary={[
-          "Na nossa consultoria via videochamada o objetivo é que você possa tirar as suas duvidas. Solicitamos que preencha um formulário explicando a sua situação para que possa chegar aqui mais preparado pra essa grande mudança.", 
-          "Com certeza esse processo vai ser mais tranquilo com informações direcionadas que te ajudarão no seu planejamento.",          
+          "Na nossa consultoria via videochamada o objetivo é que você possa tirar as suas duvidas. Solicitamos que preencha um formulário explicando a sua situação para que possa chegar aqui mais preparado pra essa grande mudança.",
+          "Com certeza esse processo vai ser mais tranquilo com informações direcionadas que te ajudarão no seu planejamento.",
           "Mas... que tipo de dúvidas vocês podem esclarecer?",
           "- Qual o melhor mês do ano pra me mudar pra Málaga?",
           "- Como funciona o processo de aluguel de imóveis na região? Vocês podem me ajudar na busca ou até mesmo visitar um imóvel por mim?",
@@ -128,6 +127,43 @@ function App() {
         />
 
       </div>
+      {/*  */}
+
+      <hr />
+      <br />
+      <h2 id="parceria">Nossos Clientes</h2>
+      <div style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}>
+        <PresentationCard
+          hideButton
+          id="sobre"
+          key={123}
+          pictureRound={'100px'}
+          pictureWidth={'200px'}
+          pictureHeight={'200px'}
+          buttonCaption="+ Assessoria"
+          pictureUrl="/BarbaraBruno.jpeg"
+          title="Bábara e Bruno"
+          summary={[
+            "Nós somos uma casal de BH com planos de mudança para a Espanha!Conhecemos a Gaby e o Éro pela internet e marcamos uma consultoria com eles! ",
+            "Pensa em um casal gente finíssima… São eles! Fizemos a consultoria, que foi muito massa. ",
+            "Eles tiraram milhões de dúvidas e deram outras milhões de dicas super importantes pra quem está de mudança, principalmente pra região que eles moram! ",
+            "Além do tempo que ficaram com a gente na ligação, se disponibilizam a responder e ajudar sempre quando as dúvidas aparecessem. Só gratidão!",
+            "Agora, na espera agora pra conhecê-los pessoalmente (e o Logan também)! Obrigada, e até breve!"]}
+          style={{
+            maxWidth: '700px',
+            backgroundColor: '#829BEF'
+          }}
+          onClick={() => navigator(pageRoutes.FORMULARIO)}
+        />
+
+      </div>
+
+      {/*  */}
       <hr />
       <h2 id="videos">Nossos vídeos imperdíveis</h2>
       <div style={{
