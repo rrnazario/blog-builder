@@ -84,6 +84,14 @@ function App() {
         }}
         onClick={() => navigator(pageRoutes.FORMULARIO)}
       />
+
+      <hr />
+      <br />
+
+      <Clients />
+
+      <hr />
+
       <h2 id="contato">Siga nossas redes sociais</h2>
       <SocialMedias
         instagramUrl="https://www.instagram.com/diario.derole"
@@ -128,11 +136,6 @@ function App() {
         />
 
       </div>
-
-      <hr />
-      <br />
-
-      <Clients />
 
       <hr />
       <h2 id="videos">Nossos vídeos imperdíveis</h2>
