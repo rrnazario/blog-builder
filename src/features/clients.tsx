@@ -44,7 +44,7 @@ export default function Clients() {
                 pictureWidth={'200px'}
                 pictureHeight={'200px'}
                 buttonCaption="+ Assessoria"
-                pictureUrl="/ateneia.jpeg"
+                pictureUrl="/patricia-celsimar.jpeg"
                 title="Patricia e Celsimar"
                 summary={[
                     "Sabe aquela mistura de ansiedade e medo que sentimos ao mudar toda a nossa vida para outro país e cidade? Foi exatamente nesse momento que o Ero e a Gaby, do Diário de Role, entraram em cena e fizeram toda a diferença.",
