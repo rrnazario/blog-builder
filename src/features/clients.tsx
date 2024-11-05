@@ -22,7 +22,7 @@ export default function Clients() {
                 pictureHeight={'200px'}
                 buttonCaption="+ Assessoria"
                 pictureUrl="/BarbaraBruno.jpeg"
-                title="Bábara e Bruno"
+                title="Bárbara e Bruno"
                 summary={[
                     "Nós somos uma casal de BH com planos de mudança para a Espanha!Conhecemos a Gaby e o Éro pela internet e marcamos uma consultoria com eles! ",
                     "Pensa em um casal gente finíssima… São eles! Fizemos a consultoria, que foi muito massa. ",
@@ -45,14 +45,16 @@ export default function Clients() {
                 pictureHeight={'200px'}
                 buttonCaption="+ Assessoria"
                 pictureUrl="/ateneia.jpeg"
-                title="Atenéia"
+                title="Patricia e Celsimar"
                 summary={[
-                    "A consultoria da Gaby e do Éro foi essencial para eu decidir em qual cidade iniciar minha aventura na Espanha: Málaga. ",
-                    "Pude tirar dúvidas e ouvir as experiências que eles possuem sobre moradia, trabalho e vida social. ",
-                    "Me senti mais segura para imigrar SOZINHA a partir da conversa que tive com eles. ",
-                    "Além de tudo, a Gaby me ajudou a encontrar o quarto que eu alugo e vivo hoje (muito obrigada, Gabizinha). ",
-                    "Na hora de mudar de país, existem muitas dúvidas, inseguranças, medos e ansiedade. ",
-                    "Acredito que a consultoria pode desbloquear uma boa parte desses sentimentos e nos ajudar a fazer uma transição mentalmente mais tranquila."]}
+                    "Sabe aquela mistura de ansiedade e medo que sentimos ao mudar toda a nossa vida para outro país e cidade? Foi exatamente nesse momento que o Ero e a Gaby, do Diário de Role, entraram em cena e fizeram toda a diferença.",
+                    "Com uma atenção carinhosa e tranquilizadora, eles nos ajudaram a entender que Málaga era (e está sendo) a escolha perfeita para nós.",
+                    "Logo de cara, sentimos que não estávamos sozinhos. Eles rapidamente se tornaram mais do que assessores — viraram amigos de verdade.",
+                    "Nos guiaram com tanto cuidado, desde a escolha do bairro até a busca por casas, garantindo que não cairíamos em golpes, algo que nos trouxe uma paz enorme no meio da crise imobiliária europeia. Principalmente pra uma família de 2 humanos e 2 caninos.",
+                    "Além disso, nos ofereceram uma visão sincera e realista de Málaga, sem vender ilusões, mas mostrando as belezas e desafios da cidade como verdadeiros moradores locais.",
+                    "E não parou por aí! Com a assessoria deles, descobrimos desde o melhor mercado até as praias mais encantadoras, passando por parques para nossos cães e restaurantes incríveis.",
+                    "Foi uma experiência completa e essencial para quem está de mudança para cá. Estamos imensamente felizes e gratos por toda a ajuda, que tornou essa transição muito mais leve e segura."]
+                }
                 style={{
                     maxWidth: '700px',
                     backgroundColor: '#BDE8FA'
