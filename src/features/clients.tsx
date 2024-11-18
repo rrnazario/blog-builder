@@ -87,6 +87,27 @@ export default function Clients() {
                 onClick={() => navigator(pageRoutes.FORMULARIO)}
             />
 
+            <PresentationCard
+                hideButton
+                id="sobre"
+                key={123}
+                pictureRound={'100px'}
+                pictureWidth={'200px'}
+                pictureHeight={'200px'}
+                buttonCaption="+ Assessoria"
+                pictureUrl="/luciana-walney-pedro.png"
+                title="Luciana, Walney e Pedro"
+                summary={[
+                    "Éro e Gaby vocês são uns amores. São tão gentis e educados!", 
+                    "Tiraram todas as nossas dúvidas e foi além com informações depois da consultoria, estão sempre dispostos a ajudar e responder as nossas dúvidas.",
+                    "Deus abençoes vocês! Nós amamos 🥰 fora que o preço cabe no bolso é maravilhoso 🙏🏼🙏🏼🙏🏼🙏🏼🙏🏼 gratidão por nos ajudar no caminho dos nossos sonhos 🥰🙏🏼"]}
+                style={{
+                    maxWidth: '700px',
+                    backgroundColor: '#BDE8FA'
+                }}
+                onClick={() => navigator(pageRoutes.FORMULARIO)}
+            />
+            
         </div>
     </>
 }
